@@ -1,2 +1,0 @@
-# Finlang
-Hello World
