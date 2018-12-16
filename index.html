@@ -1,1 +1,120 @@
-<h1> hello, World </h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+ <meta charset="utf-8">   <!--  -->
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> <!--  kommentti -->
+ <title>Suomen alkeet</title>   
+ <style>
+ body{
+	background-image: url("C:/Users/JuLLe/Pictures/Nettisivut/Suomi kuvia/1400 1.jpg"); /*<!-- TAUSTAKUVA koko sivun kokoinen -->*/
+	background-color: #cccccc;
+	height: 1400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+.centerText{   /*<!-- CSS Keskelle meneville teksteille -->*/
+	text-align: center;
+	padding: 80px 0px;
+	}
+.navbar-nav .nav-item .nav-link{ /*<!--LINKKIEN VÄRI MUSTA -->*/
+	color:white;
+	}
+.navbar-nav .nav-item:hover .nav-link { /*<!-- HOVER LINKIT: Menun linkkien värin vaihtuminen kun laittaa kursorin päälle HOX! Kuinka "reitti" toimii linkin ääreen -->*/
+	color: #2e58ad;
+	}
+.navbar-nav .nav-item.active .nav-link { /*<!-- SININEN VÄRI JA ALLLEVIIVAUS ETUSIVU LINKKIIN: -->*/
+	color: #2e58ad;
+	padding-bottom: 0px;
+	border-bottom:2px solid #2e58ad;
+	}
+.footer { /*<!-- ALAREUNA Värit paikka kokoruutuun menevä --> */
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    color: white;
+    padding: 50px;
+	text-align: center;
+	}
+
+.btn-circle.btn-lg {/*<!-- Footer IKONEIDEN koko ja niiden välimataka --> */						
+	width: 50px; /*<!-- Facen ja YT logot suurenevat boxin sisällä menevät lähemmäksi rajoja --> */
+	height: 50px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 100%;
+	background-color: white;
+	}
+.btn-circle.btn-lg:hover{
+	color: #2e58ad;
+	}
+i.fa.fa-facebook{
+	font-size: 35px;
+	background-color: white;
+	color: #3B5998;
+	}
+i.fa.fa-youtube{
+    font-size: 30px;
+	text-align:center;
+	background-color: white;
+	color:#FF0000;
+	}
+ </style>
+ </head>
+ <body>
+	<div class="container"> <!-- Pitää koko sivun pois reunoilta sulkeutuminen tulevat vikana ofc html ja bodyn ennen ;) -->
+		<nav class="navbar navbar-expand-sm navbar-dark"> <!-- Menu linkit ja logo -->
+			<a class="navbar-brand" href="file:///C:/Users/JuLLe/Pictures/Nettisivut/Bootstrap/new%201.html"> <!-- Logo vie etusivulle-->
+			<img src="C:\Users\JuLLe\Pictures\Nettisivut\Bootstrap\Kuvat\Logo100.png" alt="logo"> <!-- logo-->
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span> <!-- Menu menee kasaan kun näyttö pienenee Puhelimilla se on valmiiksi kasassa -->
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto"> <!-- ml-auto vie linkit vasemmalle oli yllättävän vaikea löytää. Ehdotuksina oli 5x määrä koodia sisältäviä html ja css ehdotuksia-->
+					<li class="nav-item active"> <!-- ACTIVE ETUSIVU linkkiin tulee alleviivaus ja sininen väri Menu linkit ja logo -->
+						<a class="nav-link" href="#"><h5>Etusivu <i class="fa fa-home"></i></h5></a> <!-- i = icon tässä tapauksessa i on h5 sisällä. Iconi on vassemmalla puolella tekstiä  -->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h5>Kurssi <i class="fa fa-book"></i></h5></a>
+					</li>		 
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h5>Kauppa <i class="fa fa-shopping-cart"></i></h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><h5>Kirjaudu <i class="fa fa-sign-in"></i></h5></a>
+					</li>					
+				</ul>
+			 </div>
+		</nav>
+		<div class="centerText">
+			<h1>Suomen alkeet</h1>
+			<h5>Tule oppimaan suomea </h5>
+		</div>
+		
+		<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis felis enim. Etiam iaculis ornare auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed scelerisque dui. Donec eu ligula pellentesque, fringilla urna et, elementum tortor. Nam molestie scelerisque erat a tincidunt. Quisque aliquam, risus eget hendrerit commodo, diam sem ullamcorper erat, et ultrices sapien turpis quis purus. Sed ac varius arcu, aliquet mattis arcu. Donec sagittis luctus nulla et lacinia. Praesent varius, est sed tincidunt varius, est urna eleifend est, quis consequat lacus felis quis augue. Nunc sed nulla viverra, lobortis neque at, condimentum odio. Donec varius tincidunt nibh, ac efficitur velit mollis at. Cras lobortis id tortor ac pulvinar. Nulla ultrices ut massa eu luctus. Fusce risus arcu, tempus at justo vitae, euismod suscipit augue.
+
+			Pellentesque ante magna, lobortis sit amet nunc et, porttitor vestibulum lacus. Vivamus vestibulum neque tellus, et gravida lacus rutrum at. Donec tempor at nunc sit amet varius. Integer eros diam, efficitur sit amet tempus sit amet, molestie pretium lacus. Vestibulum in ante vitae mauris elementum mattis. Fusce eget mauris facilisis, cursus metus sed, ullamcorper libero. Nulla quis lacinia nisl. Sed non dignissim leo, nec scelerisque turpis. Quisque tempus, ex at venenatis pulvinar, dui velit efficitur ante, a tincidunt est dolor non erat. Donec lacinia diam sit amet rhoncus ornare. Integer luctus dui et arcu facilisis, vel tincidunt magna ultricies. In sit amet tristique sapien, ac sollicitudin urna. Nam sed libero ut elit bibendum efficitur. Donec fermentum pellentesque ligula sit amet gravida. Cras ut eleifend eros.
+		</h5>
+		
+		<footer class="footer">
+		<h6>Footer Texteee</h6>
+			<p align="right"><a href="#"><button type="button" class="btn btn-circle btn-lg"><i class="fa fa-facebook "></i></button></a></p>
+			<p align="right"><a href="#"><button type="button" class="btn btn-circle btn-lg"><i class="fa fa-youtube "></i></button></a></p>
+		</footer>
+	</div> <!-- Container Divin loppu -->
+ </body>
+</html>
