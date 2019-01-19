@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"> <!--  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> <!--  kommentti -->
+  <script src="javas.js"></script>
+  <title>Suomen alkeet</title>
+  <style>
+    body{
+	background-color: #cccccc;
+	background-image: url("kuvat/14005.jpg"); /*<!-- TAUSTAKUVA koko sivun kokoinen -->*/
+	height: 1400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color:white;
+}
+.form-signin{
+    background: black;
+    opacity: 0.8;
+}
+.btn.btn-lg{
+    background: #2e58ad;
+  	border: none;
+	  padding: 10px;
+  	color: white;
+  	font-style:initial;
+  	transition-duration: .5s;
+}
+#lapiko {
+	color:red;
+}
+@media only screen and (max-width: 760px) {
+.page-footer {
+	position: relative;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+  color: white;
+	text-align: center;
+	}
+body{
+  background-repeat: repeat;
+}
+}
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Pitää koko sivun pois reunoilta sulkeutuminen tulevat vikana ofc html ja bodyn ennen ;) -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <!-- Menu linkit ja logo -->
+      <a class="navbar-brand" href="https://jullw.github.io/Finlang/">
+        <!-- Logo vie etusivulle-->
+        <img src="kuvat/Logo100.png" alt="logo"> <!-- logo-->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- Menu menee kasaan kun näyttö pienenee Puhelimilla se on valmiiksi kasassa -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- ml-auto vie linkit vasemmalle oli yllättävän vaikea löytää. Ehdotuksina oli 5x määrä koodia sisältäviä html ja css ehdotuksia-->
+          <li class="nav-item">
+            <!-- ACTIVE ETUSIVU linkkiin tulee alleviivaus ja sininen väri Menu linkit ja logo -->
+            <a class="nav-link" href="https://jullw.github.io/Finlang/">
+              <h5>Etusivu <i class="fa fa-home"></i></h5>
+            </a> <!-- i = icon tässä tapauksessa i on h5 sisällä. Iconi on vassemmalla puolella tekstiä  -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://jullw.github.io/Finlang/tehtava.html">
+              <h5>Kurssi <i class="fa fa-book"></i></h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://jullw.github.io/Finlang/tehtava.html">
+              <h5>Kauppa <i class="fa fa-shopping-cart"></i></h5>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://jullw.github.io/Finlang/login.html">
+              <h5>Kirjaudu <i class="fa fa-sign-in"></i></h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <form class="form-signin" id="rekisteri" name="rekisteri">
+          <h5 class="text-center">Luo uusi käyttäjätunnus</h5>
+
+          <div class="form-label-group">
+            <label for="kayttaja">Käyttäjänimi</label>
+            <p id="kayttajaVarmista"></p>
+            <input type="text" id="kayttaja" class="form-control" placeholder="Käyttäjänimi" pattern=".{5,}" required title="Vähintään 5 merkkiä pitkä">
+          </div>
+
+          <div class="form-label-group">
+            <label for="sahkoposti">Sähköposti</label>
+            <p id="sahkopostiVarmista"></p>
+            <input type="email" id="sahkoposti" class="form-control" placeholder="Sähköposti" required title="sähköposti tarvitsee @ merkin">
+          </div>
+
+          <div class="form-label-group">
+            <p> </p>
+            <label for="salasana">Salasana</label>
+            <input type="password" id="salasana" class="form-control" placeholder="Salasana" pattern=".{8,}" required title="Vähintään 8 merkkiä pitkä">
+          </div>
+
+          <div class="form-label-group">
+            <p> </p>
+            <label for="varmistaSala">Vahvista salasana</label>
+            <input type="password" id="varmistaSala" class="form-control" placeholder="Vahvista salasana" pattern=".{8,}" required title="Vahvista yllä oleva salasana">
+            <p> </p>
+          </div>
+
+          <div id="lapiko">
+              <p id="varmista"></p>
+              <p id="selvennys"></p>
+            <button class="btn btn-lg" type="button" onclick="kirjaudu();">Rekisteröidy</button>
+          </div>
+
+          <h6> Jos sinulla on jo käyttäjätunnus voit kirjautua sisään alhaalta olevalta linkiltä</h6>
+          <a class="d-block text-center mt-2 small" href="https://jullw.github.io/Finlang/login2.html">
+            <h3>Kirjaudu sisään</h3>
+          </a>
+        </form>
+      </div>
+
+      <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+        <!-- Footerin linkit. Esim. palaute -->
+        <div class="container text-center text-md-left">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+              <!-- Tekstiä vasempaan alareunaan -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Finlangin Tavoite</h5>
+              <p>Finlangin tavoitteena on opettaa halvalla suomen alkeet.</p>
+              <p>Finlangin kurssitehtävät on tehty vankalla kokemuksella. Tehtävien tekijänä toimii Ulla, jolla on 20
+                vuoden kokemus suomen opetuksesta ja materiaalia siltä ajalta.
+                Tehtävät eivät tule loppumaan kesken.
+              </p>
+
+            </div>
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+              <h5 class="font-weight-bold text-uppercase mb-4">Palaute</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    Lähetä palaute: Finlang@gmail.com
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+              <!-- Yrityksen tietoja! Y-tunnus on tiedossa en uskalla laittaa en tieda miksi. -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Tietoja</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <p>
+                    <i class="fa fa-home mr-3"></i> Vantaa 01300, FIN</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa fa-envelope mr-3"></i> finlang@gmail.com</p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fa fa-phone mr-3"></i> 022022022</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+              <!-- Sosiaalinen media -->
+              <h5 class="font-weight-bold text-uppercase mb-4">Seuraa meitä</h5>
+
+              <!-- Facebook -->
+              <a class="social" href="https://fi-fi.facebook.com/">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-1x" style></i>
+                  <i class="fa fa-facebook-square fa-stack-1x" style="color:blue;"></i>
+                </span>
+              </a>
+              <!-- Youtube -->
+              <a class="social" href="https://www.youtube.com/">
+                <div class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-1x" style></i>
+                  <i class="fa fa-youtube-square fa-stack-1x" style="color:red;"></i>
+                  </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="http://finlang.tk/"> Finlang</a>
+        </div>
+      </footer>
+    </div> <!-- Container Divin loppu -->
+</body>
+
+</html>
