@@ -234,13 +234,13 @@ function kirjaudu() {
 		if (salasana1 == salasana2) {
 			document.getElementById("varmista").innerHTML = tasmaa;
 			document.getElementById('varmista').style.color = "green";
-			window.open("C:/Users/JuLLe/Desktop/Testiko/eiDynaaminen.html", "_self");
+			window.open("https://jullw.github.io/Finlang/eiDynaaminen.html", "_self");
 		}
 	} else {
 		document.getElementById("varmista").innerHTML = eiTasmaa;
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
-}
+}dy
 
 
 function kirjaudu2() {
@@ -268,7 +268,7 @@ function kirjaudu2() {
 	if (salasanaSala.length >= 8) {
 			document.getElementById("salasanaVarmista").innerHTML = salasanaOk;
 			document.getElementById('salasanaVarmista').style.color = "green";
-			window.open("C:/Users/JuLLe/Desktop/Testiko/eiDynaaminen.html", "_self");
+			window.open("https://jullw.github.io/Finlang/eiDynaaminen.html", "_self");
 	} else {
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
