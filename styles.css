@@ -1,0 +1,39 @@
+.centerText{   /*<!-- CSS Keskelle meneville teksteille -->*/
+	text-align: center;
+	padding: 80px 0px;
+	}
+.navbar-nav .nav-item .nav-link{ /*<!--LINKKIEN VARI VALKOINEN -->*/
+	color:white;
+	}
+.navbar-nav .nav-item:hover .nav-link { /*<!-- HOVER LINKIT: Menun linkkien varin vaihtuminen kun laittaa kursorin paalle HOX! Kuinka "reitti" toimii linkin aareen -->*/
+	color: #2e58ad;
+	}
+.navbar-nav .nav-item.active .nav-link { /*<!-- SININEN VARI JA ALLLEVIIVAUS ETUSIVU LINKKIIN: -->*/
+	color: #2e58ad;
+	padding-bottom: 0px;
+	border-bottom:2px solid #2e58ad;
+	}
+.page-footer{ /*<!-- ALAREUNA Varit. Paikka kokoruutuun meneva --> */
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    color: white;
+	text-align: center;
+	}
+.social{
+	color: white;
+	}
+
+.reuna{
+	border-style: solid;
+	padding: 10px;
+	border-color:#2e58ad;
+	}
+.sub{ 
+	margin: 5px;
+}
+form {
+	text-align: center;
+  }
