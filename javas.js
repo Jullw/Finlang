@@ -240,7 +240,7 @@ function kirjaudu() {
 		document.getElementById("varmista").innerHTML = eiTasmaa;
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
-}dy
+}
 
 
 function kirjaudu2() {
@@ -268,7 +268,13 @@ function kirjaudu2() {
 	if (salasanaSala.length >= 8) {
 			document.getElementById("salasanaVarmista").innerHTML = salasanaOk;
 			document.getElementById('salasanaVarmista').style.color = "green";
-			window.open("https://jullw.github.io/Finlang/eiDynaaminen.html", "_self");
+		
+			myBrowserWindow.webContents.on('new-window', (event, url) => {
+  			event.preventDefault()
+  			const win = new BrowserWindow({show: false})
+  			win.once('ready-to-show', () => win.show())
+  			win.loadURL(https://jullw.github.io/Finlang/eiDynaaminen.html)
+  			event.newGuest = win)
 	} else {
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
