@@ -279,7 +279,7 @@ function kirjaudu2() {
   			const win = new BrowserWindow({show: false})
   			win.once('ready-to-show', () => win.show())
   			win.loadURL(https://jullw.github.io/Finlang/eiDynaaminen.html)
-  			event.newGuest = win)
+  			event.newGuest = win})
 	} else {
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
