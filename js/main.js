@@ -239,9 +239,9 @@ function kirjaudu() {
   			const win = new BrowserWindow({show: false})
   			win.once('ready-to-show', () => win.show())
   			win.loadURL(https://jullw.github.io/Finlang/eiDynaaminen.html)
-  			event.newGuest = win)
-		}
-	} else {
+  			event.newGuest = win
+		
+	}) else {
 		document.getElementById("varmista").innerHTML = eiTasmaa;
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
