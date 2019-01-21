@@ -238,8 +238,8 @@ function kirjaudu() {
 		document.getElementById("varmista").innerHTML = eiTasmaa;
 		document.getElementById("selvennys").innerHTML = selvennys;
 	}
+    }
 }
-
 
 function kirjaudu2() {
 
