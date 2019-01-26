@@ -1,0 +1,15 @@
+			Käyttöönotto ja ylläpito ohjeet Finlang sivulle.
+
+					Käyttöönotto
+			-	Sivulta löytyy Etusivu, Kurssi, Kauppa, Kirjaudu kohdat.(Oikea 					yläkulma)
+			-	Etusivulla on tekstiä miten sivua käyetetään.
+			-	Kurssi ja kirjaudu kohdassa on käytetty javascriptiä.(Pitäisi aina 					toimia ei tarvitse päivityksiä)
+			-	Kauppa kohdassa pääse paypalin sivuille, josta voi kurssin ostaa. 
+
+					
+					Ylläpito
+
+			-	Sivu pysyy pystyssä itsestään.(Jos Githubin nettisivu tuki 					lopetetaan ota yhteyttä minuun)
+			-	Päivitä Domain kerran vuodessa!(Freedomain.com)
+			
+			
