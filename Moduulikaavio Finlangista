@@ -1,0 +1,32 @@
+				Moduulikaavio Finlangista!
+
+	index----> kauppa----> paypal.
+	index----> kurssi ----> Javascript ----> kurssi
+	index ----> kirjaudu ----> Javascript ----> kirjaudu
+	index ----> facebook
+	index ----> youtube
+	
+	kurssi ---> etusivu/index
+	kussi----> kauppa----> paypal.
+	kussi ----> kirjaudu ----> Javascript ----> kirjaudu
+	kurssi ----> facebook
+	kurssi ----> youtube
+
+	kauppa ---> etusivu/index
+	kauppa----> kurssi ----> Javascript ----> kurssi
+	kauppa ----> kirjaudu ----> Javascript ----> kirjaudu
+	kauppa ----> facebook
+	kauppa ----> youtube
+
+	kirjaudu ---> etusivu/index
+	kirjaudu----> kurssi ----> Javascript ----> kurssi
+	kirjaudu ----> facebook
+	kirjaudu ----> youtube
+	
+	
+	kurssi ----> tehtava1 ----> (tarkista) javascript ----> tehtava1 (tarkistettu)
+	kurssi ----> tehtava2 (seuraava tehtava painike) ----> tehtava2 ----> (tarkista) javascript ----> tehtava2 (tarkistettu)
+
+	kirjaudu ----> (rekistöröidy) javascript ----> kirjaudu (rekistöröity/tarkistaa tiedot)
+	kirjaudu ----> (on jo käyttäjä) kirjaudu sisään ----> kirjaudu sisään ----> kirjaudu sisään javascript (tarkistaa tiedot)
+
